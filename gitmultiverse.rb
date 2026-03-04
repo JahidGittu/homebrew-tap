@@ -5,13 +5,13 @@
 class Gitmultiverse < Formula
   desc "Multi-account Git identity manager CLI"
   homepage "https://github.com/JahidGittu/Git-Multiverse"
-  version "1.0.1"
+  version "1.0.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/JahidGittu/Git-Multiverse/releases/download/v1.0.1/gitmultiverse_1.0.1_darwin_amd64.tar.gz"
-      sha256 "d8b52adddc81c61afee693a3eeb77b7848967ea58168234217c0156fb04eab2b"
+      url "https://github.com/JahidGittu/Git-Multiverse/releases/download/v1.0.2/GitMultiverse-macOS-amd64-1.0.2.tar.gz"
+      sha256 "8b5cdf9fb3670e2cf4938b0659a76b4c143742f3e12daa194654c06eef5591e5"
 
       define_method(:install) do
         bin.install "gitm"
@@ -20,8 +20,8 @@ class Gitmultiverse < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/JahidGittu/Git-Multiverse/releases/download/v1.0.1/gitmultiverse_1.0.1_darwin_arm64.tar.gz"
-      sha256 "43cedeb40ac912caefdc979f0ffbd6aaa035f7ab3f3ec3b6bf641036571e5db2"
+      url "https://github.com/JahidGittu/Git-Multiverse/releases/download/v1.0.2/GitMultiverse-macOS-arm64-1.0.2.tar.gz"
+      sha256 "f7b8ae2d1368ec0de87aced34c91e7f5ccf4e4d85e7c3eb88f6b48422d9deab0"
 
       define_method(:install) do
         bin.install "gitm"
@@ -33,8 +33,8 @@ class Gitmultiverse < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/JahidGittu/Git-Multiverse/releases/download/v1.0.1/gitmultiverse_1.0.1_linux_amd64.tar.gz"
-      sha256 "2d5a06b1dc06f52479ebbd48d9e8ce880345fb779016128583cb44eea75eeeb2"
+      url "https://github.com/JahidGittu/Git-Multiverse/releases/download/v1.0.2/GitMultiverse-Linux-amd64-1.0.2.tar.gz"
+      sha256 "aa8f1e137be8eb1d924ec3263b9875edeeaff0f9246b4f50eb608e6f06aa33b7"
       define_method(:install) do
         bin.install "gitm"
         bin.install "gitmultiverse-server"
@@ -42,8 +42,8 @@ class Gitmultiverse < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/JahidGittu/Git-Multiverse/releases/download/v1.0.1/gitmultiverse_1.0.1_linux_arm64.tar.gz"
-      sha256 "0adca59748df1ad3a4daa28157c7ececf5d0c1990dac771e1bd51a5282b4f96a"
+      url "https://github.com/JahidGittu/Git-Multiverse/releases/download/v1.0.2/GitMultiverse-Linux-arm64-1.0.2.tar.gz"
+      sha256 "0ab1d4dde13a02da604a93c6a043feb6d19c2c0388ba16ee3bcaac973a1ce817"
       define_method(:install) do
         bin.install "gitm"
         bin.install "gitmultiverse-server"
